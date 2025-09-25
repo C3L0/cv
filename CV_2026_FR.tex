@@ -1,0 +1,231 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+%\usepackage{changepage}
+\usepackage{graphicx}
+
+\renewcommand{\bfseries}{\fontseries{sb}\selectfont} 
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\setlength{\footskip}{10pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\setlength{\multicolsep}{0pt}
+
+\titleformat{\section}{
+  \vspace{4pt}\centering\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{tabularx}{\textwidth}{@{}m{5cm}Xr@{}}
+    \includegraphics[width=3cm]{photo.jpg} &
+
+    \centering
+    \begin{tabular}{@{}c@{}}
+	{\LARGE \textbf{Antoine Lopez}} \\[4pt]
+	{\large Data Engineer / AI Engineer}
+    \end{tabular} &
+
+    \begin{tabular}{@{}r@{}}
+	\href{mailto:{antoine.lopezsimeon@free.fr}}{antoine.lopezsimeon@free.fr}\\
+	+33 6 50 43 88 03 \\
+	Issy-les-Moulineaux, 92130, France \\
+	\href{{https://github.com/C3L0}}{github.com/C3L0}\\
+	\href{{linkedin.com/in/antoinelopez26}}{linkedin.com/in/antoinelopez26}
+    \end{tabular}
+\end{tabularx}
+
+\vspace{-0.5cm} 
+
+%-----------EXPERIENCE-----------
+\section{Expériences professionnelles}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stage data engineer }{mai -- aout .2025}
+      {Société Générale}{Val de Fontenay, Fr}
+      \resumeItemListStart
+        \resumeItem{Conception et évaluation des stratégies de test logiciel existantes dans un environement complexe}
+        \resumeItem{Proposition et implémentation de nouvelles adaptées aux besoins (Scala, Java, Spark, Apache Kafka)}
+        \resumeItem{Développement d’une application de test pour l’ingestion de données dans un datalake cloud, incluant la mise en place d’API, d’un bucket S3 et de pipelines de traitement (Python, API REST, AWS S3)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Stage développeur logiciel}{janvier -- février .2024}
+      {VINCI Energies - Cloud, Communication and Services}{La Défense, Fr}
+      \resumeItemListStart
+        \resumeItem{Développement d’un Chatbot pour la gestion des tickets clients, utilisant Llama 2 (Python, Docker, VM Linux)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Stage aide technicien de bureau d’étude}{décembre -- février .2023}
+      {VINCI Energies - AXIANS}{Palaiseau, Fr}
+      \resumeItemListStart
+        \resumeItem{Rédaction de la procédure et traitement des Déclarations de Travaux et des Déclarations d’Intention de Commencement de Travaux}
+        \resumeItem{Mise en place d’une base de données sur Excel pour la gestion des contrats clients (Excel, VBA)}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Éducation-----------
+\section{Éducation}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+  {ECE, Paris}{2021 -- Présent}
+  {Diplôme d'ingénieur en Big Data / Intelligence Artificielle — Option Cloud}{5\textsuperscript{e} année d’école d’ingénieur (3\textsuperscript{e} année du cycle ingénieur)}
+
+  \resumeSubheading
+  {Ajou University, Suwon (Corée du Sud)}{août 2023 -- janvier 2024}
+  {Semestre d’échange universitaire — Science informatique}{\,}
+
+  \resumeSubheading
+  {Baccalauréat général (Maths, Physique-Chimie, NSI) — Mention Bien}{2021}{}{\,}
+  \vspace{-12pt}
+\resumeSubHeadingListEnd
+
+%-----------Projets-----------
+\section{Projets}
+  \resumeSubHeadingListStart
+
+    %\resumeProjectHeading
+    %  {\textbf{Analyse \& Visualisation de Base de Données en Python}}{}
+    %  \resumeItemListStart
+    %    \resumeItem{Utilisation de Matplotlib / Seaborn pour une analyse immobilière de la ville de Lille.}
+    %  \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Traitement Big Data avec PySpark}}{}
+      \resumeItemListStart
+        \resumeItem{Étude des données du NASDAQ stock à grande échelle.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Functional Programming pour l’Extraction de Données}}{}
+      \resumeItemListStart
+        \resumeItem{Développement en Scala pour l’étude du trafic aérien sur une année complète.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Manipulation de Bases de Données en SQL/NoSQL}}{}
+      \resumeItemListStart
+        \resumeItem{Utilisation de Oracle SQL / MongoDB / Neo4j pour l’étude des comportements d’achat sur une plateforme en ligne.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Projet pluridisciplinaire en Intelligence Artificielle}}{}
+      \resumeItemListStart
+        \resumeItem{Développement d’un système multi-modèles d’IA pour le résumé, la catégorisation et la traduction d’articles de presse.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Compétences-----------
+\section{Compétences}
+
+
+{\small
+    \begin{tabularx}{1.1\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+	\textbf{Langages :} Python, Java, C, Scala, SQL& \textbf{Cloud/DevOps :} Azure, AWS, Docker, Git/GitHub\\
+	\textbf{Big Data :} Spark, Kafka, Hadoop, DataBricks, RDBMS, MongoDB, Neo4J& \textbf{IA :} ML, DL, GenAI, NLP, Recommended systems\\
+	\textbf{Visualisation :} Power BI, matplotlib/seaborn& \textbf{Méthode :} Cycle en V, Agile \\
+	\textbf{Autres compétences :} Réseaux, Robotique, Web 
+    \end{tabularx}
+    \vspace{-12pt}
+}
+ 
+ %-----------Langues-----------
+\section{Langues}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \begin{tabularx}{\linewidth}{@{}lX lX@{}}
+      \textbf{Français: } & Native & \textbf{Anglais: } & Professionnel \\
+      \textbf{Espagnol: } & Indépendant & \textbf{Coréen: } & Débutant \\
+    \end{tabularx}
+  }}
+\end{itemize}
+
+%-----------Centre d'intérêts-----------
+\section{Centre d'intérêts}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \begin{tabular}{@{}l@{\hspace{1cm}}l}
+        \textbf{Sports:} & Course, Randonnée, Cyclisme, Football, Tennis, Ski, Escalade \\
+        \textbf{Art:} & Dessin, Visite de musées et expositions \\
+        \textbf{Jeux vidéo:} & Suivi de compétitions e-sport
+    \end{tabular}
+  }}
+\end{itemize}
+
+\end{document}
