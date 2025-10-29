@@ -31,8 +31,12 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.25in}
+
+\titleformat{\section}{
+  \vspace{2pt}\centering\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{4pt}]
 
 \setlength{\footskip}{10pt}
 
@@ -89,28 +93,28 @@
 
 \begin{document}
 
-\begin{tabularx}{\textwidth}{@{}m{5cm}Xr@{}}
+\begin{tabularx}{\textwidth}{@{}m{3cm} X r@{}}
     \includegraphics[width=3cm]{photo2.jpg} &
 
     \centering
     \begin{tabular}{@{}c@{}}
-	{\LARGE \textbf{Antoine Lopez}} \\[4pt]
-	{\large Data Engineer / AI Engineer}
+	    {\LARGE \textbf{Antoine Lopez}} \\[4pt]
+	    {\large Data Science/ Artificial Intelligence}
     \end{tabular} &
 
-\raisebox{-0.5cm}{
     \begin{tabular}{@{}r@{}}
-	\href{mailto:{antoine.lopezsimeon@free.fr}}{antoine.lopezsimeon@free.fr}\\
-	+33 6 50 43 88 03 \\
-	Issy-les-Moulineaux, 92130, France \\
-	\href{{https://github.com/C3L0}}{github.com/C3L0}\\
-	\href{{linkedin.com/in/antoinelopez26}}{linkedin.com/in/antoinelopez26}
+	    \href{mailto:{antoine.lopezsimeon@free.fr}}{antoine.lopezsimeon@free.fr}\\
+	    +33 6 50 43 88 03 \\
+	    Issy-les-Moulineaux, 92130, France \\
+	    \href{{https://github.com/C3L0}}{github.com/C3L0}\\
+	    \href{{linkedin.com/in/antoinelopez26}}{linkedin.com/in/antoinelopez26}
     \end{tabular}
-}
-
 \end{tabularx}
 
-\vspace{-0.5cm} 
+\vspace{2pt} 
+\noindent Futur \textbf{Data/AI Scientist} (Ingénieur en Data/IA) à la recherche d'un stage de fin d'études de 6 mois pour mettre à profit mes compétences en analyse avancée et en projets d'IA dans un environnement stimulant.
+
+\vspace{-10pt}
 
 %-----------EXPERIENCE-----------
 \section{Expériences professionnelles}
@@ -209,38 +213,36 @@
 %-----------Compétences-----------
 \section{Compétences}
 
-
 {\small
-    \begin{tabularx}{1.1\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\textwidth}{@{}X X@{}}
 	\textbf{Langages :} Python, Java, C, Scala, SQL& \textbf{Cloud/DevOps :} Azure, AWS, Docker, Git/GitHub\\
-	\textbf{Big Data :} Spark, Kafka, Hadoop, DataBricks, RDBMS, MongoDB, Neo4J& \textbf{IA :} ML, DL, GenAI, NLP, Recommended systems\\
-	\textbf{Visualisation :} Power BI, matplotlib/seaborn& \textbf{Méthode :} Cycle en V, Agile \\
-	\textbf{Certification :} AWS Academy Graduate - Cloud Foundations - Training Badge& \textbf{Autres compétences :} Réseaux, Robotique, Web 
+	\textbf{IA :} ML, DL, GenAI, NLP, Recommended systems & \textbf{Big Data :} Spark, Kafka, Hadoop, DataBricks, RDBMS, MongoDB, Neo4J\\
+	\textbf{Méthode :} Cycle en V, Agile & \textbf{Certification :} AWS Academy Graduate - Cloud Foundations - Training Badge\\
+	 \textbf{Visualisation :} Power BI, matplotlib/seaborn& \textbf{Autres compétences :} Réseaux, Robotique, Web 
     \end{tabularx}
     \vspace{-12pt}
 }
  
  %-----------Langues-----------
 \section{Langues}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \begin{tabularx}{\linewidth}{@{}lX lX@{}}
-      \textbf{Français: } & Native & \textbf{Anglais: } & Professionnel \\
-      \textbf{Espagnol: } & Indépendant & \textbf{Coréen: } & Débutant \\
+\vspace{-6pt}
+{\small
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+      \textbf{Français: } Native & \textbf{Anglais: } Professionnel \\
+      \textbf{Espagnol: } Indépendant & \textbf{Coréen: } Débutant \\
     \end{tabularx}
-  }}
+  }
 \end{itemize}
 
 %-----------Centre d'intérêts-----------
 \section{Centre d'intérêts}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \begin{tabular}{@{}l@{\hspace{1cm}}l}
-        \textbf{Sports:} & Course, Randonnée, Cyclisme, Football, Tennis, Ski, Escalade \\
-        \textbf{Art:} & Dessin, Visite de musées et expositions \\
-        \textbf{Jeux vidéo:} & Suivi de compétitions e-sport
-    \end{tabular}
-  }}
+\vspace{-6pt}
+{\small
+\begin{tabularx}{\textwidth}{@{}X X@{}}	\textbf{Tech: } Suivi des innovations en Intelligence Artificielle et Blockchain & \textbf{Art: } Dessin, Visite de musées et expositions \\
+	\textbf{Sports: } Course, Randonnée, Cyclisme, Football, Tennis, Ski, Escalade & \textbf{Jeux vidéo: } Suivi de compétitions e-sport
+	 
+    \end{tabularx}
+  }
 \end{itemize}
 
 \end{document}

@@ -31,8 +31,12 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.25in}
+
+\titleformat{\section}{
+  \vspace{2pt}\centering\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{4pt}]
 
 \setlength{\footskip}{10pt}
 
@@ -89,29 +93,28 @@
 
 \begin{document}
 
-\begin{tabularx}{\textwidth}{@{}m{5cm}Xr@{}}
+\begin{tabularx}{\textwidth}{@{}m{3cm} X r@{}}
     \includegraphics[width=3cm]{photo2.jpg} &
 
     \centering
     \begin{tabular}{@{}c@{}}
-	{\LARGE \textbf{Antoine Lopez}} \\[4pt]
-	{\large Data Engineer / AI Engineer}
+	    {\LARGE \textbf{Antoine Lopez}} \\[4pt]
+	    {\large Data Science/ Artificial Intelligence}
     \end{tabular} &
 
-\raisebox{-0.5cm}{
     \begin{tabular}{@{}r@{}}
-	\href{mailto:{antoine.lopezsimeon@free.fr}}{antoine.lopezsimeon@free.fr}\\
-	+33 6 50 43 88 03 \\
-	Issy-les-Moulineaux, 92130, France \\
-	\href{{https://github.com/C3L0}}{github.com/C3L0}\\
-	\href{{linkedin.com/in/antoinelopez26}}{linkedin.com/in/antoinelopez26}
+	    \href{mailto:{antoine.lopezsimeon@free.fr}}{antoine.lopezsimeon@free.fr}\\
+	    +33 6 50 43 88 03 \\
+	    Issy-les-Moulineaux, 92130, France \\
+	    \href{{https://github.com/C3L0}}{github.com/C3L0}\\
+	    \href{{linkedin.com/in/antoinelopez26}}{linkedin.com/in/antoinelopez26}
     \end{tabular}
-}
-
 \end{tabularx}
 
-\vspace{-0.5cm} 
+\vspace{2pt} 
+\noindent Future \textbf {Data/AI Scientist} (Engineer in Data and AI) with strong theoretical and project experience, seeking a \textbf{6-month end-of-study internship} to apply advanced analytical methods in a professional setting.
 
+\vspace{-10pt} 
 %-----------EXPERIENCE-----------
 \section{Professional Experiences}
   \resumeSubHeadingListStart
@@ -207,40 +210,35 @@
 
 %-----------SKILLS-----------
 \section{Skills}
-
 {\small
-    \begin{tabularx}{1.1\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\textwidth}{@{}X X@{}}
 	\textbf{Programming Languages :} Python, Java, C, Scala, SQL& \textbf{Cloud/DevOps :} Azure, AWS, Docker, Git/GitHub\\
-	\textbf{Big Data :} Spark, Kafka, Hadoop, DataBricks, RDBMS, MongoDB, Neo4J& \textbf{AI :} ML, DL, GenAI, NLP, Recommended systems\\
-	\textbf{Visualization :} Power BI, matplotlib/seaborn& \textbf{Work Methodologies :} V-Model, Agile \\
-	\textbf{Certification :} AWS Academy Graduate - Cloud Foundations - Training Badge& \textbf{Others skills :} Networks, Robotics, Web 
+	\textbf{AI :} ML, DL, GenAI, NLP, Recommended systems& \textbf{Big Data :} Spark, Kafka, Hadoop, DataBricks, RDBMS, MongoDB, Neo4J\\
+	\textbf{Work Methodologies :} V-Model, Agile& \textbf{Certification :} AWS Academy Graduate - Cloud Foundations - Training Badge\\
+	\textbf{Visualization :} Power BI, matplotlib/seaborn& \textbf{Others skills :} Networks, Robotics, Web
     \end{tabularx}
-    \vspace{-12pt}
+    \vspace{-12pt} 
 }
 
 %-----------LANGUAGES-----------
 \section{Languages}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \begin{tabularx}{\linewidth}{@{}lX lX@{}}
-      \textbf{French: } & Native & \textbf{English: } & Professional \\
-      \textbf{Spanish: } & Intermediate & \textbf{Korean: } & Beginner \\
-    \end{tabularx}
-  }}
-\end{itemize}
-
+\vspace{-6pt}
+{\small
+\begin{tabularx}{\textwidth}{@{}X X@{}} 
+    \textbf{French: } Native & \textbf{English: } Professional \\
+    \textbf{Spanish: } Intermediate & \textbf{Korean: } Beginner \\
+\end{tabularx}
+}
 
 %-----------INTERESTS-----------
 \section{Interests}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \begin{tabular}{@{}l@{\hspace{1cm}}l}
-        \textbf{Sports:} & Running, Hiking, Cycling, Football, Tennis, Skiing, Climbing \\
-        \textbf{Arts:} & Drawing, Visiting museums and exhibitions \\
-        \textbf{Video Games:} & Following e-sports competitions
-    \end{tabular}
-  }}
-\end{itemize}
+\vspace{-6pt}
+{\small
+\begin{tabularx}{\textwidth}{@{}X X@{}} % Deux colonnes de largeur égale
+    \textbf{Tech \& Veille:} Suivi des innovations en IA et Blockchain & \textbf{Arts:} Dessin, Musées et expositions \\
+    \textbf{Sports:} Course, Randonnée, Cyclisme, Football, Tennis, Ski, Escalade & \textbf{Jeux vidéo:} Suivi des compétitions e-sports
+\end{tabularx}
+}
 
 \end{document}
 
