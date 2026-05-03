@@ -9,17 +9,19 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage[french]{babel}
 \usepackage{tabularx}
-\usepackage{multicol}
 \input{glyphtounicode}
 
-\usepackage[default]{sourcesanspro}
-\usepackage[T1]{fontenc}
-%\usepackage{changepage}
-\usepackage{graphicx}
+% Use Times New Roman for that classic look in the image
+\usepackage{times}
 
-\renewcommand{\bfseries}{\fontseries{sb}\selectfont} 
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+
+% Adjust margins to be professional but slightly tighter as in the image
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
 
 \pagestyle{fancy}
 \fancyhf{} 
@@ -27,222 +29,157 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.75in}
-\addtolength{\textheight}{1.25in}
-
+% Section formatting matching the image (Small Caps, Left Aligned, Rule)
 \titleformat{\section}{
-  \vspace{2pt}\centering\bfseries
-}{}{0em}{}[\color{black}\titlerule\vspace{4pt}]
-
-\setlength{\footskip}{10pt}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-\setlength{\multicolsep}{0pt}
-
-\titleformat{\section}{
-  \vspace{4pt}\centering\bfseries
-}{}{0em}{}[\color{black}\titlerule\vspace{4pt}]
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 \pdfgentounicode=1
 
+% Custom commands for the "Jake's Resume" style
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{0pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 \begin{document}
 
-\begin{tabularx}{\textwidth}{@{}m{3cm} X r@{}}
-    \includegraphics[width=3cm]{photo2.jpg} &
-
-    \centering
-    \begin{tabular}{@{}c@{}}
-	    {\LARGE \textbf{Antoine Lopez}} \\[4pt]
-	    {\large Data Science/ Artificial Intelligence}
-    \end{tabular} &
-
-    \begin{tabular}{@{}r@{}}
-	    \href{mailto:{antoine.lopezsimeon@free.fr}}{antoine.lopezsimeon@free.fr}\\
-	    +33 6 50 43 88 03 \\
-	    Issy-les-Moulineaux, 92130, France \\
-	    \href{{https://github.com/C3L0}}{github.com/C3L0}\\
-	    \href{{linkedin.com/in/antoinelopez26}}{linkedin.com/in/antoinelopez26}
-    \end{tabular}
-\end{tabularx}
-
-\vspace{2pt} 
-\noindent Futur \textbf{Data/AI Scientist} (Ingénieur en Data/IA) à la recherche d'un stage de fin d'études de 6 mois pour mettre à profit mes compétences en analyse avancée et en projets d'IA dans un environnement stimulant.
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{Antoine Lopez}} \\ \vspace{4pt}
+    \small
+    Issy-les-Moulineaux, France $|$ +33 6 50 43 88 03 \\
+    \href{mailto:antoine.lopezsimeon@free.fr}{\underline{antoine.lopezsimeon@free.fr}} $|$ 
+    \href{https://linkedin.com/in/antoinelopez26}{\underline{linkedin.com/in/antoinelopez26}} $|$
+    \href{https://github.com/C3L0}{\underline{github.com/C3L0}} $|$
+    \href{https://www.credly.com/users/antoine-lopez}{\underline{credly.com/users/antoinelopez}}
+\end{center}
 
 \vspace{-10pt}
 
-%-----------EXPERIENCE-----------
-\section{Expériences professionnelles}
+%-----------PROFIL-----------
+\section{Profil}
+\small{
+Ingénieur \textbf{IA/ML} hautement motivé avec une solide expérience théorique et pratique en Big Data et Intelligence Artificielle. Spécialisé dans la modélisation prédictive, le deep learning et les architectures cloud évolutives. Souhaite appliquer des méthodes analytiques avancées dans des environnements professionnels à fort impact.
+}
+
+%-----------EXPÉRIENCE-----------
+\section{Expérience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Stage data engineer }{mai -- aout .2025}
-      {Société Générale}{Val de Fontenay, Fr}
+      {Stagiaire AI Scientist}{Février 2026 -- Août 2026}
+      {ALTEN}{Sèvres, France}
       \resumeItemListStart
-        \resumeItem{Conception et évaluation des stratégies de test logiciel existantes dans un environement complexe}
-        \resumeItem{Proposition et implémentation de nouvelles adaptées aux besoins (Scala, Java, Spark, Apache Kafka)}
-        \resumeItem{Développement d’une application de test pour l’ingestion de données dans un datalake cloud, incluant la mise en place d’API, d’un bucket S3 et de pipelines de traitement (Python, API REST, AWS S3)}
-    \resumeItemListEnd
+        \resumeItem{Développement d’un framework de bout en bout pour la modélisation prédictive des défaillances système dans des réseaux financiers Web3 complexes (JEPA)}
+        \resumeItem{Conception d’un pipeline de réseau égo-temporel utilisant PyTorch Geometric pour capturer la dynamique locale des nœuds à plusieurs échelles et l’évolution du voisinage (GCP BigQuery)}
+        \resumeItem{Implémentation d’un JEPA pour prédire les représentations latentes futures des états du réseau (Python, PyTorch)}
+        \resumeItem{Gestion de l'ensemble du pipeline de recherche, incluant la formalisation de l'hypothèse théorique, la conception de l'ingestion de données personnalisée pour les graphes temporels et la validation de la robustesse du modèle face aux chocs historiques du système.}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {Stage développeur logiciel}{janvier -- février .2024}
-      {VINCI Energies - Cloud, Communication and Services}{La Défense, Fr}
+      {Stagiaire Data Engineer}{Mai 2025 -- Août 2025}
+      {Société Générale}{Val de Fontenay, France}
       \resumeItemListStart
-        \resumeItem{Développement d’un Chatbot pour la gestion des tickets clients, utilisant Llama 2 (Python, Docker, VM Linux)}
-    \resumeItemListEnd
+        \resumeItem{Conception et évaluation des stratégies de test logiciel dans un environnement complexe}
+        \resumeItem{Implémentation de nouvelles stratégies de test adaptées aux besoins (Scala, Java, Spark, Apache Kafka)}
+        \resumeItem{Développement d’une application de test pour l’ingestion de données dans un data lake cloud, incluant des API, des buckets S3 et des pipelines de traitement de données (Python, API REST, AWS S3)}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {Stage aide technicien de bureau d’étude}{décembre -- février .2023}
-      {VINCI Energies - AXIANS}{Palaiseau, Fr}
+      {Stagiaire Développeur Logiciel}{Janvier 2024 -- Février 2024}
+      {VINCI Energies — Cloud, Communication and Services}{La Défense, France}
       \resumeItemListStart
-        \resumeItem{Rédaction de la procédure et traitement des Déclarations de Travaux et des Déclarations d’Intention de Commencement de Travaux}
-        \resumeItem{Mise en place d’une base de données sur Excel pour la gestion des contrats clients (Excel, VBA)}
-    \resumeItemListEnd
+        \resumeItem{Développement d’un chatbot pour la gestion des tickets clients utilisant Llama 2 (Python, Docker, VM Linux)}
+      \resumeItemListEnd
 
+    \resumeSubheading
+      {Stagiaire Aide Technicien Bureau d'Études}{Décembre 2022 -- Février 2023}
+      {VINCI Energies — AXIANS}{Palaiseau, France}
+      \resumeItemListStart
+        \resumeItem{Mise en place d’une base de données Excel pour la gestion des contrats clients (Excel, VBA)}
+        \resumeItem{Rédaction de procédures et traitement des Déclarations de Travaux (DT) et des Déclarations d’Intention de Commencement de Travaux (DICT)}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-%-----------Éducation-----------
+%-----------ÉDUCATION-----------
 \section{Éducation}
-\resumeSubHeadingListStart
-
-  \resumeSubheading
-  {ECE, Paris}{2021 -- Présent}
-  {Diplôme d'ingénieur en Big Data / Intelligence Artificielle — Option Cloud}{5\textsuperscript{e} année d’école d’ingénieur (3\textsuperscript{e} année du cycle ingénieur)}
-
-  \resumeSubheading
-  {Ajou University, Suwon (Corée du Sud)}{août 2023 -- janvier 2024}
-  {Semestre d’échange universitaire — Science informatique}{\,}
-
-  \resumeSubheading
-  {Baccalauréat général (Maths, Physique-Chimie, NSI) — Mention Bien}{2021}{}{\,}
-  \vspace{-12pt}
-\resumeSubHeadingListEnd
-
-%-----------Projets-----------
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ECE Paris}{Septembre 2021 -- Août 2026}
+      {Diplôme d'Ingénieur - Big Data \& Intelligence Artificielle $|$ Option Cloud}{Paris, France}
+    \resumeSubheading
+      {Ajou University}{Août 2023 -- Janvier 2024}
+      {Semestre d'échange universitaire — Informatique}{Suwon, Corée du Sud}
+    \resumeProjectHeading
+      {\textbf{Baccalauréat Général} $|$ \textit{Mathématiques, Physique-Chimie, NSI}}{2021}
+  \resumeSubHeadingListEnd
+%-----------PROJETS-----------
 \section{Projets}
   \resumeSubHeadingListStart
-
-    %\resumeProjectHeading
-    %  {\textbf{Analyse \& Visualisation de Base de Données en Python}}{}
-    %  \resumeItemListStart
-    %    \resumeItem{Utilisation de Matplotlib / Seaborn pour une analyse immobilière de la ville de Lille.}
-    %  \resumeItemListEnd
-
     \resumeProjectHeading
-      {\textbf{Projet de fin d'Etude X Alten}}{}
+      {\textbf{Projet de fin d'études X Alten} $|$ \emph{IA, Optimisation FEA, Python}}{}
       \resumeItemListStart
-        \resumeItem{Développement d'une solution d'optimisation de l'analyse par éléments finis (FEA) avec IA.}
-    \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Projet pluridisciplinaire en Intelligence Artificielle}}{}
-      \resumeItemListStart
-        \resumeItem{Développement d’un système multi-modèles d’IA pour le résumé, la catégorisation et la traduction d’articles de presse.}
+        \resumeItem{Développement d'un système d'IA pour optimiser les processus d'analyse par éléments finis (FEA).}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Hackathon AWS organisé par IPPON}}{}
+      {\textbf{Hackathon Agentic Scenario by Reply Challenge} $|$ \emph{Agents IA, Détection de fraude}}{}
       \resumeItemListStart
-        \resumeItem{Chaotic scenario : Maintien et mise à l'échelle d'une plateforme sur le cloud AWS}
-      \resumeItemListEnd
-     
-%     \resumeProjectHeading
-%       {\textbf{Traitement Big Data avec PySpark}}{}
-%       \resumeItemListStart
-%         \resumeItem{Étude des données du NASDAQ stock à grande échelle.}
-%       \resumeItemListEnd
-
-    % \resumeProjectHeading
-    %   {\textbf{Functional Programming pour l’Extraction de Données}}{}
-    %   \resumeItemListStart
-    %     \resumeItem{Développement en Scala pour l’étude du trafic aérien sur une année complète.}
-    %   \resumeItemListEnd
+        \resumeItem{Construction d'un système agentique pour détecter des cas de fraude complexes dans des scénarios en temps réel.}
+      \resumeItemListEnd 
 
     \resumeProjectHeading
-      {\textbf{Manipulation de Bases de Données en SQL/NoSQL}}{}
+      {\textbf{Projet d'IA pluridisciplinaire} $|$ \emph{NLP, Python, Pipeline d'IA}}{}
       \resumeItemListStart
-        \resumeItem{Utilisation de Oracle SQL / MongoDB / Neo4j pour l’étude des comportements d’achat sur une plateforme en ligne.}
+        \resumeItem{Création d'un système d'IA multi-modèles pour le résumé, la catégorisation et la traduction d'articles de presse.}
       \resumeItemListEnd
-
+  
+    \resumeProjectHeading
+      {\textbf{Hackathon AWS par IPPON} $|$ \emph{Cloud, AWS, Résilience}}{}
+      \resumeItemListStart
+        \resumeItem{Gestion de la maintenance et de la mise à l'échelle d'une plateforme à haute charge sur AWS dans des scénarios chaotiques.}
+      \resumeItemListEnd   
   \resumeSubHeadingListEnd
 
-%-----------Compétences-----------
-\section{Compétences}
+%-----------COMPÉTENCES-----------
+\section{Compétences techniques}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{IA \& Machine Learning}{: ML, DL, GenAI, NLP, Systèmes de Recommandation, PyTorch, PyTorch Geometric, JEPA} \\
+     \textbf{Big Data \& Cloud}{: GCP BigQuery, Spark, Kafka, Hadoop, Databricks, AWS, Azure, Docker, S3, MongoDB, Neo4J} \\
+     \textbf{Langages de programmation}{: Python, Java, C, Scala, SQL} \\
+     \textbf{Outils \& Méthodologies}{: Git/GitHub, Agile (Scrum), Cycle en V, Power BI, Matplotlib, Seaborn} \\
+     \textbf{Certifications}{: Graduate AWS Academy, Google Cloud (BigQuery Insights, AI Studio Prototypes)}
+    }}
+ \end{itemize}
 
-{\small
-    \begin{tabularx}{\textwidth}{@{}X X@{}}
-	\textbf{Langages :} Python, Java, C, Scala, SQL& \textbf{Cloud/DevOps :} Azure, AWS, Docker, Git/GitHub\\
-	\textbf{IA :} ML, DL, GenAI, NLP, Recommended systems & \textbf{Big Data :} Spark, Kafka, Hadoop, DataBricks, RDBMS, MongoDB, Neo4J\\
-	\textbf{Méthode :} Cycle en V, Agile & \textbf{Certification :} AWS Academy Graduate - Cloud Foundations - Training Badge\\
-	 \textbf{Visualisation :} Power BI, matplotlib/seaborn& \textbf{Autres compétences :} Réseaux, Robotique, Web 
-    \end{tabularx}
-    \vspace{-12pt}
-}
- 
- %-----------Langues-----------
-\section{Langues}
-\vspace{-6pt}
-{\small
-\begin{tabularx}{\textwidth}{@{}X X@{}}
-      \textbf{Français: } Native & \textbf{Anglais: } Professionnel \\
-      \textbf{Espagnol: } Indépendant & \textbf{Coréen: } Débutant \\
-    \end{tabularx}
-  }
-\end{itemize}
-
-%-----------Centre d'intérêts-----------
-\section{Centre d'intérêts}
-\vspace{-6pt}
-{\small
-\begin{tabularx}{\textwidth}{@{}X X@{}}	\textbf{Tech: } Suivi des innovations en Intelligence Artificielle et Blockchain & \textbf{Art: } Dessin, Visite de musées et expositions \\
-	\textbf{Sports: } Course, Randonnée, Cyclisme, Football, Tennis, Ski, Escalade & \textbf{Jeux vidéo: } Suivi de compétitions e-sport
-	 
-    \end{tabularx}
-  }
-\end{itemize}
+%-----------LANGUES & CENTRES D'INTÉRÊT-----------
+\section{Langues \& Centres d'intérêt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Langues : } Français (Maternel), Anglais (Professionnel), Espagnol (Intermédiaire) \\
+     \textbf{Centres d'intérêt : } Veille technologique \& IA, Web3, Dessin, Course à pied, Football, Randonnée, Compétitions d'e-sport
+    }}
+ \end{itemize}
 
 \end{document}
