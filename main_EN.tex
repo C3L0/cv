@@ -1,0 +1,87 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+
+\input{glyphtounicode}
+
+% Margin setup
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{Antoine Lopez}} \\ \vspace{4pt}
+    \small
+    Issy-les-Moulineaux, France $|$ +33 6 50 43 88 03 \\
+    \href{mailto:antoine.lopezsimeon@free.fr}{\underline{antoine.lopezsimeon@free.fr}} $|$ 
+    \href{https://linkedin.com/in/antoinelopez26}{\underline{linkedin.com/in/antoinelopez26}} $|$
+    \href{https://github.com/C3L0}{\underline{github.com/C3L0}} $|$
+    \href{https://www.credly.com/users/antoine-lopez}{\underline{credly.com/users/antoinelopez}}
+\end{center}
+
+\vspace{-10pt}
+
+% Dynamic Module Inputs
+\input{modules/profile.tex}
+\input{modules/experience.tex}
+\input{modules/education.tex}
+\input{modules/projects.tex}
+\input{modules/skills.tex}
+\input{modules/languages_interests.tex}
+
+\end{document}
