@@ -1,4 +1,12 @@
 \section{Profile}
 \small{
-Highly motivated \textbf{AI/ML Engineer} with strong theoretical and project experience in Big Data and Artificial Intelligence. Specialized in predictive modeling, deep learning, and scalable cloud architectures. Seeking to apply advanced analytical methods in high-impact professional environments.
+    \ifbool{isML}{
+    Highly motivated \textbf{AI/ML Engineer - Data Scientist} with strong experience in Deep Learning, Graph Neural Networks and LLM. Proven track record in training custom architectures, agentic workflows, and deploying scalable machine learning pipelines in production.
+    }{}
+    \ifbool{isDE}{
+    Results-driven \textbf{Data Engineer} specialized in scalable distributed systems, high-throughput ETL pipelines, and cloud lakehouse architectures. Experienced in building robust streaming and batch processing workflows with Apache Spark, Kafka and Cloud.
+    }{}
+    \ifbool{isSWE}{
+    Performance-focused \textbf{Software Engineer} with a strong foundation in low-level systems programming, distributed tooling, and backend architectures. Proficient in Python, C, Rust, and Scala, with active contributions to high-impact open-source developer ecosystems.
+    }{}
 }

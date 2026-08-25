@@ -1,4 +1,12 @@
 \section{Profil}
-\small{
-Ingénieur \textbf{IA/ML} très motivé, doté d'une solide expérience théorique et pratique en Big Data et Intelligence Artificielle. Spécialisé dans la modélisation prédictive, le deep learning et les architectures cloud scalables. À la recherche d'opportunités pour appliquer des méthodes analytiques avancées dans des environnements professionnels à fort impact.
+    \small{
+    \ifbool{isML}{
+    Ingénieur \textbf{IA/ML} et Data Scientist doté de solide connaissance théorique et pratique en Deep Learning, Graph Neural Networks, LLM). Expérience éprouvée dans l'entraînement d'architectures sur mesure, les systèmes agentiques et le déploiement de pipelines ML en production.
+    }{}
+    \ifbool{isDE}{
+    Ingénieur \textbf{Data Engineer} spécialisé dans les systèmes distribués scalables, les pipelines ETL à haut débit et les architectures cloud lakehouse. Expérimenté dans la conception de flux streaming et batch robustes avec Apache Spark, Kafka, AWS.
+    }{}
+    \ifbool{isSWE}{
+    Ingénieur \textbf{Logiciel / Systèmes} axé sur la performance, avec une solide maîtrise de la programmation bas niveau, de l'outillage distribué et des architectures backend. Maîtrise de Python, C, Rust et Scala, avec des contributions actives à l'écosystème open source.
+    }{}
 }

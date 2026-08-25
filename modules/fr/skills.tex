@@ -1,10 +1,26 @@
 \section{Compétences Techniques}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{IA \& Machine Learning}{: ML, DL, GenAI, NLP, Systèmes de Recommandation, PyTorch, PyTorch Geometric, JEPA} \\
-     \textbf{Big Data \& Cloud}{: GCP BigQuery, Spark, Kafka, Hadoop, Databricks, AWS, Azure, Docker, S3, MongoDB, Neo4J} \\
-     \textbf{Langages de Programmation}{: Python, Java, C, Scala, SQL} \\
-     \textbf{Outils \& Méthodologies}{: Git/GitHub, Agile (Scrum), Cycle en V, Power BI, Matplotlib, Seaborn} \\
-     \textbf{Certifications}{: AWS Academy Graduate, Google Cloud (BigQuery Insights, AI Studio Prototypes)}
+    \ifbool{isML}{
+     \textbf{IA \& Machine Learning}{: PyTorch, PyTorch Geometric, JEPA, GNNs, GenAI/LLMs, L/SLMs, NLP, Vision par Ordinateur, Transformers} \\
+     \textbf{MLOps \& Cloud}{: Docker, GCP (BigQuery, Vertex AI), AWS (S3, EC2), CI/CD, Git/GitHub} \\
+     \textbf{Langages de Programmation}{: Python, C, Scala, SQL, Java} \\
+     \textbf{Bibliothèques \& Frameworks}{: Scikit-Learn, NumPy, Pandas, Pytorch, TensorFlow, OpenRouter} \\
+     \textbf{Certifications}{: Google Cloud (BigQuery Insights, AI Studio Prototypes), Diplômé AWS Academy}
+    }{}
+    \ifbool{isDE}{
+     \textbf{Big Data \& Streaming}{: Apache Spark (PySpark), Apache Kafka, Databricks, Hadoop, Data Lake} \\
+     \textbf{Cloud \& Stockage}{: AWS (S3, EC2, Lambda), GCP BigQuery, PostgreSQL, MongoDB, Neo4J, Docker} \\
+     \textbf{Langages de Programmation}{: SQL, Scala, Python, Java} \\
+     \textbf{Data Engineering \& Outils}{: Pipelines ETL/ELT, APIs REST, Git/GitHub, CI/CD, Agile (Scrum)} \\
+     \textbf{Certifications}{: Diplômé AWS Academy, Google Cloud (BigQuery Insights)}
+    }{}
+    \ifbool{isSWE}{
+     \textbf{Langages}{: C, Rust, Python, Scala, Java, SQL} \\
+     \textbf{Systèmes \& Infrastructure}{: Linux, Docker, Git/GitHub, CI/CD} \\
+     \textbf{Open Source \& Outillage}{: UV (Astral), Scikit-Lego, Intégration d'API, Tests unitaires/intégration} \\
+     \textbf{Méthodologies}{: Agile (Scrum), Cycle en V, Architecture logicielle, Optimisation système} \\
+     \textbf{Certifications}{: Diplômé AWS Academy, Google Cloud (AI Studio Prototypes)}
+    }{}
     }}
  \end{itemize}
