@@ -15,6 +15,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{geometry}
+\usepackage{etoolbox}
 
 \input{glyphtounicode}
 
@@ -33,6 +34,11 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \pdfgentounicode=1
+
+% Define flags
+\newbool{isML}
+\newbool{isDE}
+\newbool{isSWE}
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
