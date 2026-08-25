@@ -2,101 +2,107 @@
   \resumeSubHeadingListStart
 
     % =========================================================================
-    % ACADEMIC & HACKATHONS
+    % MACHINE LEARNING / AI PROFILE (isML)
     % =========================================================================
+    \ifbool{isML}{
+      \resumeProjectHeading
+        {\textbf{Final Project X Alten} $|$ \emph{AI, FEA Optimization, Python}}{}
+        \resumeItemListStart
+          \resumeItem{Developing an AI system to optimize finite elements analysis (FEA) processes.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Final Project X Alten} $|$ \emph{AI, FEA Optimization, Python}}{}
-      \resumeItemListStart
-        \resumeItem{Developing an AI system to optimize finite elements analysis (FEA) processes.}
-      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Hackathon Agentic Scenario by Reply Challenge} $|$ \emph{AI Agents, Fraud Detection}}{}
+        \resumeItemListStart
+          \resumeItem{Built an agentic system to detect complex fraud cases in real-time scenarios.}
+        \resumeItemListEnd 
 
-    \resumeProjectHeading
-      {\textbf{Hackathon Agentic Scenario by Reply Challenge} $|$ \emph{AI Agents, Fraud Detection}}{}
-      \resumeItemListStart
-        \resumeItem{Built an agentic system to detect complex fraud cases in real-time scenarios.}
-      \resumeItemListEnd 
+      \resumeProjectHeading
+        {\textbf{JEPA Implementation} $|$ \emph{Self-Supervised Learning, PyTorch, Python}}{}
+        \resumeItemListStart
+          \resumeItem{Built a Joint-Embedding Predictive Architecture (JEPA) exploring latent representation learning.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Multidisciplinary AI Project} $|$ \emph{NLP, Python, AI Pipeline}}{}
-      \resumeItemListStart
-        \resumeItem{Built a multi-model AI system for summarizing, categorizing, and translating news articles.}
-      \resumeItemListEnd
-  
-    \resumeProjectHeading
-      {\textbf{Hackathon AWS by IPPON} $|$ \emph{Cloud, AWS, Resilience}}{}
-      \resumeItemListStart
-        \resumeItem{Managed maintenance and scaling of a high-load platform on AWS under chaotic scenarios.}
-      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Draw to 3D Schema} $|$ \emph{Multimodal Agent, Python, Computer Vision}}{}
+        \resumeItemListStart
+          \resumeItem{Designed a multimodal agent pipeline converting hand-drawn 2D sketches into structured 3D schemas.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Draw to 3D Schema} $|$ \emph{Multimodal Agent, Python, Computer Vision}}{}
-      \resumeItemListStart
-        \resumeItem{Designed a multimodal agent pipeline converting hand-drawn 2D sketches into structured 3D schemas.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Wikipedia Real-Time Stream} $|$ \emph{PySpark, Databricks, SQL, Big Data}}{}
-      \resumeItemListStart
-        \resumeItem{Engineered a real-time data streaming and aggregation pipeline using PySpark and Databricks SQL.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Sport Profiler} $|$ \emph{NLP, Python, SLM, Information Extraction}}{}
-      \resumeItemListStart
-        \resumeItem{Built an automated athlete profiling system leveraging Small Language Models (SLMs) and NLP.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Airport Data Extraction Pipeline} $|$ \emph{Scala, Functional Programming, ETL}}{}
-      \resumeItemListStart
-        \resumeItem{Implemented an automated ETL engine in Scala to parse, clean, and analyze high-volume airport metrics.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{MusicRecognizer} $|$ \emph{MLOps, Docker, CI/CD, FastAudio}}{}
-      \resumeItemListStart
-        \resumeItem{Deployed an end-to-end audio fingerprinting and recognition service with CI/CD and Docker containerization.}
-      \resumeItemListEnd
+      % --- Other ML Projects (Uncomment to swap) ---
+      % \resumeProjectHeading
+      %   {\textbf{Sign Language to Text Translator} $|$ \emph{Python, Computer Vision, MediaPipe}}{}
+      %   \resumeItemListStart
+      %     \resumeItem{Developed a real-time sign language recognition system using hand-tracking landmarks.}
+      %   \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{Multidisciplinary AI Project} $|$ \emph{NLP, Python, AI Pipeline}}{}
+      %   \resumeItemListStart
+      %     \resumeItem{Built a multi-model AI system for summarizing, categorizing, and translating news articles.}
+      %   \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{Sport Profiler} $|$ \emph{NLP, Python, SLM}}{}
+      %   \resumeItemListStart
+      %     \resumeItem{Built an automated athlete profiling system leveraging Small Language Models (SLMs) and NLP.}
+      %   \resumeItemListEnd
+    }{}
 
     % =========================================================================
-    % PERSONAL & OPEN SOURCE
+    % DATA ENGINEERING PROFILE (isDE)
     % =========================================================================
+    \ifbool{isDE}{
+      \resumeProjectHeading
+        {\textbf{Wikipedia Real-Time Stream} $|$ \emph{PySpark, Databricks, SQL, Big Data}}{}
+        \resumeItemListStart
+          \resumeItem{Engineered a real-time data streaming and aggregation pipeline using PySpark and Databricks SQL.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Sign Language to Text Translator} $|$ \emph{Python, Computer Vision, MediaPipe}}{}
-      \resumeItemListStart
-        \resumeItem{Developed a real-time sign language recognition system using hand-tracking landmarks and deep learning.}
-      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Airport Data Extraction Pipeline} $|$ \emph{Scala, Functional Programming, ETL}}{}
+        \resumeItemListStart
+          \resumeItem{Implemented an automated ETL engine in Scala to parse, clean, and analyze high-volume airport metrics.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Tech Watch Agent} $|$ \emph{Agentic AI, Python, OpenRouter API}}{}
-      \resumeItemListStart
-        \resumeItem{Created an autonomous agent to scrape, analyze, and synthesize daily AI research updates via OpenRouter.}
-      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Hackathon AWS by IPPON} $|$ \emph{Cloud, AWS, Resilience}}{}
+        \resumeItemListStart
+          \resumeItem{Managed maintenance and scaling of a high-load platform on AWS under chaotic scenarios.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Transformer from Scratch in C} $|$ \emph{C, Low-Level Optimization, LLM}}{}
-      \resumeItemListStart
-        \resumeItem{Implemented an autoregressive Transformer model purely in C with manual tensor operations and memory management.}
-      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{MusicRecognizer} $|$ \emph{MLOps, Docker, CI/CD, FastAudio}}{}
+        \resumeItemListStart
+          \resumeItem{Deployed an end-to-end audio recognition service with automated CI/CD and Docker containerization.}
+        \resumeItemListEnd
+    }{}
 
-    \resumeProjectHeading
-      {\textbf{JEPA Implementation} $|$ \emph{Self-Supervised Learning, PyTorch, Python}}{}
-      \resumeItemListStart
-        \resumeItem{Built a Joint-Embedding Predictive Architecture (JEPA) exploring representation learning without generative decoding.}
-      \resumeItemListEnd
+    % =========================================================================
+    % SOFTWARE / SYSTEMS ENGINEERING PROFILE (isSWE)
+    % =========================================================================
+    \ifbool{isSWE}{
+      \resumeProjectHeading
+        {\textbf{Transformer from Scratch in C} $|$ \emph{C, Low-Level Optimization, LLM}}{}
+        \resumeItemListStart
+          \resumeItem{Implemented an autoregressive Transformer purely in C with manual tensor and memory management.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Open Source Contribution: uv} $|$ \emph{Rust, Systems Programming, Tooling}}{}
-      \resumeItemListStart
-        \resumeItem{Contributed codebase enhancements and fixes to Astral's high-performance Python package manager written in Rust.}
-      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Open Source Contribution: uv} $|$ \emph{Rust, Systems Programming, Astral}}{}
+        \resumeItemListStart
+          \resumeItem{Contributed codebase enhancements and fixes to Astral's high-performance Python package manager.}
+        \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Open Source Contribution: scikit-lego} $|$ \emph{Python, Machine Learning, Scikit-Learn}}{}
-      \resumeItemListStart
-        \resumeItem{Contributed custom transformers and utility estimators to the popular scikit-learn extension package.}
-      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Open Source Contribution: scikit-lego} $|$ \emph{Python, Machine Learning, Scikit-Learn}}{}
+        \resumeItemListStart
+          \resumeItem{Contributed custom transformers and utility estimators to the scikit-lego library.}
+        \resumeItemListEnd
 
-  \resumeSubHeadingListEndjljklkj
+      \resumeProjectHeading
+        {\textbf{Tech Watch Agent} $|$ \emph{Agentic AI, Python, OpenRouter API}}{}
+        \resumeItemListStart
+          \resumeItem{Created an autonomous agent to scrape, analyze, and synthesize daily AI research updates via OpenRouter.}
+        \resumeItemListEnd
+    }{}
+
+  \resumeSubHeadingListEnd
