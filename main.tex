@@ -1,0 +1,90 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[french,english]{babel}
+\usepackage{tabularx}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{etoolbox}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Marges & Format
+\geometry{left=0.5in, top=0.4in, right=0.5in, bottom=0.4in}
+\setlength{\footskip}{4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands - strictly locked baselineskip and spacing
+\newcommand{\resumeItem}[1]{\item{\small{#1}\par}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}, itemsep=0pt, topsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\raggedbottom
+
+\begin{document}
+
+% Chargement dynamique du titre de poste
+\input{\modulepath/jobtitle.tex}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{Antoine Lopez}} \\ \vspace{2pt}
+    {\large \textbf{\jobtitle}} \\ \vspace{2pt}
+    \small
+    Issy-les-Moulineaux, France $|$ +33 6 50 43 88 03 \\
+    \href{mailto:antoine.lopez.slx@gmail.com}{\underline{antoine.lopez.slx@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/antoinelopez26}{\underline{linkedin.com/in/antoinelopez26}} $|$
+    \href{https://github.com/C3L0}{\underline{github.com/C3L0}} $|$
+    \href{https://www.credly.com/users/antoinelopez26}{\underline{credly.com/users/antoinelopez26}}
+\end{center}
+
+\vspace{-10pt}
+
+% Dynamic & Shared Modules
+\input{\modulepath/profile.tex}
+\input{modules/\lang/experience.tex}
+\input{modules/\lang/education.tex}
+\input{\modulepath/projects.tex}
+\input{\modulepath/skills.tex}
+\input{modules/\lang/languages_interests.tex}
+
+\end{document}

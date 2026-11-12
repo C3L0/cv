@@ -18,8 +18,9 @@
 \usepackage{etoolbox}
 
 \input{glyphtounicode}
+\pdfgentounicode=1
 
-% Margin setup
+% Margins & Header setup
 \geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
 
 \pagestyle{fancy}
@@ -33,13 +34,6 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-\pdfgentounicode=1
-
-% Define flag 
-\newbool{isML}
-\newbool{isDE}
-\newbool{isSWE}
-
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -49,7 +43,7 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -57,37 +51,38 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
-% Header
+%----------HEADER----------
 \begin{center}
-    {\Huge \textbf{Antoine Lopez}} \\ \vspace{4pt}
+    {\Huge \textbf{Antoine Lopez}} \\ \vspace{2pt}
+    {\large \textbf{Ingénieur IA — Spécialiste GenAI, LLMs \& Agents}} \\ \vspace{3pt}
     \small
     Issy-les-Moulineaux, France $|$ +33 6 50 43 88 03 \\
     \href{mailto:antoine.lopezsimeon@free.fr}{\underline{antoine.lopezsimeon@free.fr}} $|$ 
     \href{https://linkedin.com/in/antoinelopez26}{\underline{linkedin.com/in/antoinelopez26}} $|$
     \href{https://github.com/C3L0}{\underline{github.com/C3L0}} $|$
-    \href{https://www.credly.com/users/antoinelopez26}{\underline{credly.com/users/antoinelopez26}}
+    \href{https://www.credly.com/users/antoinelopez26}{\underline{credly.com/users/antoinelopez}}
 \end{center}
 
 \vspace{-10pt}
 
-% Dynamic Module Inputs
-\input{modules/en/profile.tex}
-\input{modules/en/experience.tex}
-\input{modules/en/education.tex}
-\input{modules/en/projects.tex}
-\input{modules/en/skills.tex}
-\input{modules/en/languages_interests.tex}
+% Dynamic Modules
+\input{modules/fr/ey/profile.tex}
+\input{modules/fr/experience.tex}
+\input{modules/fr/education.tex}
+\input{modules/fr/ey/projects.tex}
+\input{modules/fr/ey/skills.tex}
+\input{modules/fr/languages_interests.tex}
 
 \end{document}

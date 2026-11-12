@@ -6,3 +6,6 @@
 *.fls
 *.out
 *.synctex.gz
+
+modules/en/*/
+modules/fr/*/
