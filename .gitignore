@@ -9,3 +9,6 @@
 
 modules/en/*/
 modules/fr/*/
+
+output/
+*.pdf
